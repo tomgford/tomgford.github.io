@@ -18,6 +18,8 @@
 		vertical-align: baseline;
 	}
 
+
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -1670,13 +1672,21 @@
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
 		color: #585858;
-		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
+		
+	}
+
+	a .back {
+		display: block;
+		margin-left: 100%;
+		padding-left: 100%;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
 			color: #A6D5CC !important;
 		}
+
+
 
 	strong, b {
 		font-weight: 900;
