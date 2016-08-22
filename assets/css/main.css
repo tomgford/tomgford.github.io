@@ -1740,6 +1740,8 @@
 
 		}
 
+
+
 	h2, h3, h4, h5, h6 {
 		font-weight: 900;
 		line-height: 1.5;
@@ -2667,7 +2669,7 @@
 					background-size: 100% 100%;
 					opacity: 0.25;
 					z-index: 2;
-				}
+				} 
 
 			.tiles article > a {
 				display: -moz-flex;
@@ -2732,6 +2734,8 @@
 						margin-bottom: 0;
 					}
 
+			
+
 			.tiles article.style1 > .image:before {
 				background-color: #f2849e;
 			}
@@ -2755,6 +2759,8 @@
 			.tiles article.style6 > .image:before {
 				background-color: #8499e7;
 			}
+
+				
 
 			body:not(.is-touch) .tiles article:hover > .image {
 				-moz-transform: scale(1.1);
