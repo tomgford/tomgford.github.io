@@ -1,11 +1,5 @@
-@import url(font-awesome.min.css);
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
-
-/*
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+/* @import url(font-awesome.min.css);
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");*/
 
 /* Reset */
 
@@ -1641,13 +1635,6 @@
 
 /* Type */
 
-	body, input, select, textarea {
-		color: #585858;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 16pt;
-		font-weight: 300;
-		line-height: 1.75;
-	}
 
 		@media screen and (max-width: 1680px) {
 
@@ -1697,7 +1684,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #A6D5CC !important;
+			color: #eb897a !important;
 		}
 
 
@@ -1713,13 +1700,6 @@
 
 
 
-	h1 {
-		font-size: 2.75em;
-		font-weight: 700;
-		line-height: 1.3;
-		margin: 0 0 1em 0;
-		letter-spacing: -0.035em;
-	}
 
 		h1 a {
 			color: inherit;
@@ -2615,7 +2595,7 @@
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
@@ -2646,6 +2626,24 @@
 					width: 100%;
 				}
 
+				.tiles article > .image:before {
+					pointer-events: none;
+					-moz-transition: background-color 0.5s ease, opacity 0.5s ease;
+					-webkit-transition: background-color 0.5s ease, opacity 0.5s ease;
+					-ms-transition: background-color 0.5s ease, opacity 0.5s ease;
+					transition: background-color 0.5s ease, opacity 0.5s ease;
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					opacity: 1.0;
+					z-index: 1;
+					opacity: 0;
+				}
+
 
 
 				.tiles article > .image:after {
@@ -2667,7 +2665,7 @@
 					background-position: center;
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
-					opacity: 0.25;
+					opacity: 1;
 					z-index: 2;
 				} 
 
@@ -2737,27 +2735,27 @@
 			
 
 			.tiles article.style1 > .image:before {
-				background-color: #f2849e;
+				background-color: #ffffff;
 			}
 
 			.tiles article.style2 > .image:before {
-				background-color: #7ecaf6;
+				background-color: #ffffff;
 			}
 
 			.tiles article.style3 > .image:before {
-				background-color: #7bd0c1;
+				background-color: #ffffff;
 			}
 
 			.tiles article.style4 > .image:before {
-				background-color: #c75b9b;
+				background-color: #ffffff;
 			}
 
 			.tiles article.style5 > .image:before {
-				background-color: #ae85ca;
+				background-color: #ffffff;
 			}
 
 			.tiles article.style6 > .image:before {
-				background-color: #8499e7;
+				background-color: #ffffff;
 			}
 
 				
@@ -2767,11 +2765,12 @@
 				-webkit-transform: scale(1.1);
 				-ms-transform: scale(1.1);
 				transform: scale(1.1);
+
 			}
 
 				body:not(.is-touch) .tiles article:hover > .image:before {
-					background-color: #333333;
-					opacity: 0.35;
+					background-color: #ffffff;
+					opacity: 0.50;
 				}
 
 				body:not(.is-touch) .tiles article:hover > .image:after {
@@ -2862,7 +2861,7 @@
 /* Header */
 
 	#header {
-		padding: 8em 0 0.1em 0 ;
+		padding: 8em 0 5em 0 ;
 	}
 
 		#header .logo {
@@ -3047,18 +3046,16 @@
 
 			#menu > .inner > ul {
 				list-style: none;
-				margin: 0 0 1em 0;
+				margin: 1em 0 1em 0;
 				padding: 0;
 			}
 
 				#menu > .inner > ul > li {
 					padding: 0;
-					border-top: solid 1px rgba(255, 255, 255, 0.15);
 				}
 
 					#menu > .inner > ul > li a {
 						display: block;
-						padding: 1em 0;
 						line-height: 1.5;
 						border: 0;
 						color: inherit;
@@ -3208,6 +3205,10 @@
 		background-color: #E45E49;
 	}
 
+	#footer p {
+		color: white;
+	}
+
 
 
 
@@ -3239,4 +3240,80 @@
   margin-right: auto;
   width: 100%;
   margin-top:100px;
+}
+
+
+
+h1 {
+	font-size: 2em;
+		font-weight: 700;
+		line-height: 1.3;
+			color: #585858;
+		font-family: jaf-domus, sans-serif;
+		font-weight: 800;
+		font-style: normal;
+		text-align: center;
+}
+
+h2 {
+	font-size: 1.5em;
+		font-weight: 700;
+		line-height: 1.3;
+			color: #585858;
+		font-family: jaf-domus, sans-serif;
+		font-weight: 200;
+		font-style: normal;
+		text-align: center;
+}
+
+h3 {
+	font-size: 1em;
+		font-weight: 700;
+		line-height: 1.3;
+			color: #585858;
+		font-family: jaf-domus, sans-serif;
+		font-weight: 800;
+		font-style: normal;
+		text-align: center;
+}
+
+
+article h1 {
+	font-size: 1.75em;
+	color: #000000;
+		
+}
+
+
+#email {
+	margin-bottom: 50px;
+}
+
+
+
+
+p {
+	margin-bottom: 20px;
+}
+
+#menutitle h1 {
+	font-size: 1.5em;
+}
+
+#footer h1 {
+	font-size: 3em;
+}
+
+#testimonials h1 {
+	font-size: 1.5em;
+}
+
+#testimonials {
+	margin-top: 50px;
+	margin-right: 50px;
+	margin-left: 50px;
+	display: block;
+
+
+
 }
